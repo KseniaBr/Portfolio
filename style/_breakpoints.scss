@@ -1,0 +1,44 @@
+// Breakpoints
+
+$breakpoints: (
+  "xs": 0,
+  "s": 576px,
+  "m": 768px,
+  "l": 992px,
+  "xl": 1200px,
+);
+
+/* --------------------------------------------------
+
+   Breakpoint Mixin
+   -------------------------------------------------- */
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content; /* font-size ist z.B. content*/
+  }
+}
+
+@mixin s {
+  @media (min-width: map-get($breakpoints, "s")) {
+    @content; /* font-size ist z.B. content*/
+  }
+}
+
+@mixin m {
+  @media (min-width: map-get($breakpoints, "m")) {
+    @content; /* font-size ist z.B. content*/
+  }
+}
+
+@mixin l {
+  @media (min-width: map-get($breakpoints, "l")) {
+    @content; /* font-size ist z.B. content*/
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content; /* font-size ist z.B. content*/
+  }
+}

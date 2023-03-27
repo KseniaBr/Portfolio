@@ -1,0 +1,33 @@
+.services {
+  main {
+    padding-top: 2rem;
+    @include m {
+      padding: 6rem 3rem;
+    }
+    @include l {
+      padding: 10rem 5rem;
+    }
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .more {
+    text-transform: uppercase;
+  }
+
+  .flower img {
+    right: 0;
+    left: auto;
+    width: 12rem;
+    transform: scaleX(-1);
+    opacity: 0.4;
+    @include m {
+      width: 22.5rem;
+    }
+    @include l {
+      width: 30rem;
+    }
+  }
+}

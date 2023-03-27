@@ -1,0 +1,522 @@
+/* --------------------------------------------------
+
+   Breakpoint Mixin
+   -------------------------------------------------- */
+@import url(https://fonts.bunny.net/css?family=anonymous-pro:700);
+@import url(https://fonts.bunny.net/css?family=encode-sans-sc:200);
+.services main {
+  padding-top: 2rem;
+}
+@media (min-width: 768px) {
+  .services main {
+    padding: 6rem 3rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  .services main {
+    padding: 10rem 5rem;
+    /* font-size ist z.B. content*/
+  }
+}
+.services p {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+.services .more {
+  text-transform: uppercase;
+}
+.services .flower img {
+  right: 0;
+  left: auto;
+  width: 12rem;
+  transform: scaleX(-1);
+  opacity: 0.4;
+}
+@media (min-width: 768px) {
+  .services .flower img {
+    width: 22.5rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  .services .flower img {
+    width: 30rem;
+    /* font-size ist z.B. content*/
+  }
+}
+
+.work main {
+  padding-top: 5rem;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .work main {
+    padding-top: 10rem;
+    /* font-size ist z.B. content*/
+  }
+}
+.work .text {
+  padding: 5rem;
+}
+.work .animationBox {
+  height: 30rem;
+  width: 30rem;
+  margin-left: auto;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .work .animationBox {
+    width: 60rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  .work .animationBox {
+    width: 80rem;
+    /* font-size ist z.B. content*/
+  }
+}
+.work .animationBox .follow {
+  padding-top: 12rem;
+  padding-right: 10rem;
+  text-transform: uppercase;
+  width: 100%;
+  animation: shadow 0.8s 0.8s;
+}
+@media (min-width: 768px) {
+  .work .animationBox .follow {
+    padding-top: 15rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  .work .animationBox .follow {
+    padding-top: 17rem;
+    /* font-size ist z.B. content*/
+  }
+}
+.work .animationBox .follow a:hover {
+  text-shadow: 0.1rem 0.2rem;
+}
+.work .animationBox .finger {
+  position: absolute;
+  top: 5rem;
+  right: -1.1rem;
+}
+.work .animationBox .finger img {
+  width: 22.5rem;
+  opacity: 0;
+  animation: finger 2s 0.5s cubic-bezier(0.05, 0.21, 0, 0.98) forwards;
+}
+@media (min-width: 768px) {
+  .work .animationBox .finger img {
+    width: 35rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  .work .animationBox .finger img {
+    width: 45rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@keyframes shadow {
+  0% {
+    text-shadow: 0.1rem 0.1rem;
+  }
+  100% {
+    text-shadow: 0.1rem 0.1rem;
+  }
+}
+@keyframes finger {
+  0% {
+    opacity: 1;
+    right: -20rem;
+    top: 25rem;
+  }
+  50% {
+    right: 1rem;
+    top: 30rem;
+    rotate: -15deg;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+    top: 27rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact main {
+    margin: 3rem;
+    margin-bottom: 0;
+    /* font-size ist z.B. content*/
+  }
+}
+.contact p {
+  margin: 0;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.contact form textarea {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 2px solid;
+  width: 100%;
+  max-height: 15rem;
+}
+@media (min-width: 576px) {
+  .contact form textarea {
+    max-height: 30rem; /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 768px) {
+  .contact form textarea {
+    max-height: 25rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  .contact form textarea {
+    max-height: 20rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 576px) {
+  .contact form input,
+  .contact form textarea {
+    font-size: 2rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  .contact form input,
+  .contact form textarea {
+    font-size: 2.5rem;
+    /* font-size ist z.B. content*/
+  }
+}
+.contact form input {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: none;
+  border-bottom: 2px solid;
+}
+.contact form input[type=submit] {
+  width: 8rem;
+  padding: 1rem;
+  border: 0.1rem solid;
+  background-color: #f9f9f9;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.2rem;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .contact form input[type=submit] {
+    width: 10rem;
+    font-size: 2rem;
+    /* font-size ist z.B. content*/
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body a {
+  color: #242424;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: "Anonymous Pro", monospace;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+}
+@media (min-width: 576px) {
+  body {
+    font-size: 2rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 2.4rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  body {
+    font-size: 2.8rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 3.2rem; /* font-size ist z.B. content*/
+  }
+}
+body h1,
+body h2 {
+  text-transform: uppercase;
+  text-shadow: 0.1rem 0.1rem;
+}
+body h1 {
+  font-size: 2.6rem;
+}
+@media (min-width: 576px) {
+  body h1 {
+    font-size: 3rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 768px) {
+  body h1 {
+    font-size: 3.4rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  body h1 {
+    font-size: 3.8rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 1200px) {
+  body h1 {
+    font-size: 4.2rem;
+    /* font-size ist z.B. content*/
+  }
+}
+body h2 {
+  font-size: 2rem;
+}
+@media (min-width: 576px) {
+  body h2 {
+    font-size: 2.4rem;
+    margin-top: 1rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 768px) {
+  body h2 {
+    font-size: 2.8rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  body h2 {
+    font-size: 3.2rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 1200px) {
+  body h2 {
+    font-size: 3.6rem;
+    /* font-size ist z.B. content*/
+  }
+}
+
+.content {
+  background-color: white;
+  margin: 1rem 1.5rem;
+  padding: 1.5rem 1rem;
+  border: 0.1rem solid;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 5rem 1fr 5rem;
+  flex-shrink: 1;
+  gap: 0.5rem;
+  min-height: 95vh;
+}
+
+header {
+  grid-row: 1/2;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  text-transform: lowercase;
+  list-style: none;
+  letter-spacing: 0;
+  font-size: 1.3rem;
+}
+@media (min-width: 576px) {
+  .nav ul {
+    font-size: 1.9rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 768px) {
+  .nav ul {
+    font-size: 2.9rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  .nav ul {
+    font-size: 3.2rem;
+    justify-content: space-around;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 1200px) {
+  .nav ul {
+    font-size: 4rem;
+    /* font-size ist z.B. content*/
+  }
+}
+
+.bracket a::before,
+.bracket a::after {
+  opacity: 0;
+}
+.bracket a::before {
+  content: "< ";
+}
+.bracket a::after {
+  content: " />";
+}
+.bracket a:hover::before,
+.bracket a:hover::after {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.bracket.active a::before,
+.bracket.active a::after {
+  opacity: 1;
+}
+
+main {
+  grid-row: 2/3;
+}
+
+.home section {
+  margin-top: 5rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .home section {
+    margin-top: 15rem;
+    /* font-size ist z.B. content*/
+  }
+}
+.home h1 {
+  margin-top: 3rem;
+}
+.home .large {
+  font-size: larger;
+}
+.home .chat {
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.home .profile img {
+  object-fit: cover;
+  object-position: top;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 10rem;
+  filter: grayscale(100%);
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .home .profile img {
+    width: 20rem;
+    height: 20rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  .home .profile img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 20rem;
+    /* font-size ist z.B. content*/
+  }
+}
+
+.footer {
+  grid-row: 3/4;
+  align-self: flex-end;
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.footer ul li {
+  padding: 0 1rem;
+}
+.footer ul a {
+  font-size: 2rem;
+}
+@media (min-width: 576px) {
+  .footer ul a {
+    font-size: 3rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 768px) {
+  .footer ul a {
+    font-size: 3.2rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  .footer ul a {
+    font-size: 3.5rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 1200px) {
+  .footer ul a {
+    font-size: 3.8rem;
+    /* font-size ist z.B. content*/
+  }
+}
+
+.flower img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15rem;
+}
+@media (min-width: 768px) {
+  .flower img {
+    left: 2rem;
+    width: 22.5rem;
+    /* font-size ist z.B. content*/
+  }
+}
+@media (min-width: 992px) {
+  .flower img {
+    left: 0;
+    width: 30rem;
+    /* font-size ist z.B. content*/
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
